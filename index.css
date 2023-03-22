@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Red+Hat+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --blue: hsl(218, 22%, 67%);
+    --dcyan: rgb(14, 163, 163);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: Karla;
+    background-color: var(--gray);
+}
+
+.main {
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.top, .left, .right {
+    padding: 5%;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.left {
+    background-color: #2BB3B1;
+}
+
+.right {
+    background-color: #4ABEBD;
+}
+
+h2 {
+    color: #4ABEBD;
+    font-weight: 700;
+}
+
+.h3-1 {
+    color: var(--yellow);
+}
+
+.p-1 {
+    color: #BABDC1;
+}
+
+h3, h1 {
+    color: white;
+}
+
+h1 {
+    margin-right: 2%;
+}
+
+.money {
+    display: flex;
+    align-items: center;
+}
+
+.p-2 {
+    color: #A6FFFF;
+}
+
+span {
+    color: #6DD8D6;
+}
+
+p, span, ul {
+    font-size: 16px;
+}
+
+li {
+    color: #C7FFFF;
+}
+
+.left {
+    border-bottom-left-radius: 15px;
+}
+
+.right {
+    border-bottom-right-radius: 15px;
+}
+
+button {
+    border: 1px solid #4FB16E;
+    border-radius: 10px;
+    padding: 5%;
+    font-size: 16px;
+    width: 100%;
+    background-color: #BFDF32;
+    color: #FBFFC1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .right {
+        border-bottom-left-radius: 15px;
+        width: 100%;
+    }
+}
